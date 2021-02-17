@@ -1,4 +1,4 @@
-# GARCH-models-in-R
+# GARCH models in R
 
 #### February 17, 2021 ####
 #### Matteo Bottacini, [matteo.bottacini@usi.ch](mailto:matteo.bottacini@usi.ch) ####
