@@ -54,6 +54,20 @@ When you target a portfolio with 5% annualized volatility, and the annualized vo
 GARCH models with a leverage effect and skewed student t innovations. 
 Use GARCH models for estimating over ten thousand different GARCH model specifications.
 
+#### Estimation of non-normal GARCH model ####
+The function `ugarchfit()` does a joint estimation of all the mean, variance and distribution parameters. 
+A general approach is to use a skewed student t distribution. 
+You then need to estimate also the skew and shape parameters.
+You will see that you obtain parameter estimates are close to the true parameters. 
+The difference between the estimated and true parameter is called the estimation error. 
+On long time series, the error is typically small.
+
+#### Standardized returns ####
+
+A complete GARCH model requires to make an assumption about the distribution of the standardized returns. 
+Once the model has been estimated you can verify the assumption by analyzing the standardized returns.
+
+
 ### performance_evaluation.R ###
 Analysis of statistical significance of the estimated GARCH parameters, the properties of standardized returns, the interpretation of information criteria and the use of rolling GARCH estimation and mean squared prediction errors to analyze the accuracy of the volatility forecast.
 
